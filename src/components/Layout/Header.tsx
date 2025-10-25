@@ -66,7 +66,7 @@ const Header: React.FC = () => {
             <a href="https://github.com" className="text-white/70 hover:text-white transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" className="text-white/70 hover:text-white transition-colors">
+            <a href="https://linkedin.com/in/chamisapride" className="text-white/70 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
             <a href="https://twitter.com" className="text-white/70 hover:text-white transition-colors">
@@ -107,7 +107,7 @@ const Header: React.FC = () => {
                   <a href="https://github.com" className="text-white/70 hover:text-white transition-colors">
                     <Github size={20} />
                   </a>
-                  <a href="https://linkedin.com" className="text-white/70 hover:text-white transition-colors">
+                  <a href="https://linkedin.com/in/chamisapride" className="text-white/70 hover:text-white transition-colors">
                     <Linkedin size={20} />
                   </a>
                   <a href="https://twitter.com" className="text-white/70 hover:text-white transition-colors">
