@@ -1,0 +1,11 @@
+# Handle all other routes with the SPA
+/*    /index.html   200
+
+# Optional: Redirect old URLs to new ones (add as needed)
+# /old-path  /new-path  301
+
+# Optional: Force HTTPS (uncomment if needed)
+# http://your-domain.com/*  https://your-domain.com/:splat  301!
+
+# Optional: Redirect www to non-www (or vice versa)
+# https://www.your-domain.com/*  https://your-domain.com/:splat  301!
