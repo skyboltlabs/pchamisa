@@ -3,11 +3,11 @@ import { Project, Experience, Publication } from '../types';
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'VidSentry — Video Safety Reinvented',
+    title: 'VidSentry - Video Safety Reinvented',
     description: 'The world\'s next-generation AI moderation platform detecting hate speech, violence, and nudity in real-time',
     longDescription: 'Founded and architected VidSentry, a high-performance AI video moderation platform that\'s shaping the future of trust & safety at scale. Built with Sightengine + custom ML orchestration, FFmpeg processing workers, and Supabase storage for real-time compliance enforcement.',
     technologies: ['Python', 'TensorFlow', 'FFmpeg', 'Supabase', 'Sightengine API', 'React', 'Node.js', 'Docker'],
-    image: 'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://github.com/VidSentry/assets/blob/main/vidsentry-main-about.webp?auto=compress&cs=tinysrgb&w=800',
     demoUrl: 'https://vidsentry.com',
     category: 'AI/ML',
     impact: '90% reduction in manual moderation time',
@@ -15,19 +15,19 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'Aethermuse — Virtual Museum of AI Art',
+    title: 'Aethermuse - Virtual Museum of AI Art',
     description: 'Exhibition & marketplace for premium AI-generated collections with global print fulfillment',
     longDescription: 'Created a revolutionary platform democratizing art ownership through computational creativity. Features an AI curation engine based on style, emotion, and concept similarity, connecting digital collectors with premium AI-generated art worldwide.',
     technologies: ['React', 'Node.js', 'OpenAI API', 'Stripe', 'AWS S3', 'PostgreSQL', 'Next.js'],
     image: 'https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=800',
-    demoUrl: 'https://aethermuse.art',
+    demoUrl: 'https://aethermuse.netlify.app',
     category: 'SaaS',
     impact: 'Featured in digital art showcases',
     year: 2024
   },
   {
     id: '3',
-    title: 'AutoOutreach — Personalized Sales Automation',
+    title: 'AutoOutreach - Personalized Sales Automation',
     description: 'GPT-powered outbound engine using live LinkedIn + website signals for ultra-personalized cold emails',
     longDescription: 'Architected an intelligent sales automation platform that analyzes LinkedIn profiles and website data to generate highly personalized outreach campaigns. Achieved 4× lead conversion improvement in field trials through advanced AI personalization.',
     technologies: ['GPT-4', 'Python', 'LinkedIn API', 'React', 'PostgreSQL', 'Redis', 'Celery'],
