@@ -155,8 +155,8 @@ export const publications: Publication[] = [
     id: '4',
     title: 'Explainable AI in Medical Diagnosis: Grad-CAM Applications in Radiology',
     authors: ['Pride Chamisa'],
-    venue: 'Honours Thesis - University of Cape Town',
-    year: 2024,
+    venue: 'Honours Thesis - University of South Africa',
+    year: 2025,
     abstract: 'Development of interpretable machine learning systems for medical diagnosis, combining radiology imaging with clinical data while ensuring fairness across demographic groups and explainability for clinical practitioners.',
     citations: 0
   }
