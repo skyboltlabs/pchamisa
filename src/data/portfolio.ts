@@ -27,13 +27,13 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'AutoOutreach - Personalized Sales Automation',
-    description: 'GPT-powered outbound engine using live LinkedIn + website signals for ultra-personalized cold emails',
-    longDescription: 'Architected an intelligent sales automation platform that analyzes LinkedIn profiles and website data to generate highly personalized outreach campaigns. Achieved 4× lead conversion improvement in field trials through advanced AI personalization.',
-    technologies: ['GPT-4', 'Python', 'LinkedIn API', 'React', 'PostgreSQL', 'Redis', 'Celery'],
-    image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
-    category: 'SaaS',
-    impact: '4× lead conversion improvement',
+    title: 'TriageBot Pro - AI Medical Triage Assistant',
+    description: 'AI-powered medical triage assistant for low-resource clinics with multi-language support, offline capability, and WhatsApp integration.',
+    longDescription: 'Architected an AI-powered medical triage assistant to empower healthcare workers in low-resource settings. TriageBot Pro provides instant clinical decision support for emergency medicine via WhatsApp, works offline, and supports multiple languages to ensure rapid and accurate patient assessment.',
+    technologies: ['TensorFlow.js', 'React Native', 'Python', 'Twilio API', 'PWA', 'SQLite', 'Docker'],
+    image: 'https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'AI/ML',
+    impact: 'Reduces triage time by 50%',
     year: 2023
   },
   {
