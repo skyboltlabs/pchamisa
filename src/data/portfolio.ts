@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description: 'The world\'s next-generation AI moderation platform detecting hate speech, violence, and nudity in real-time',
     longDescription: 'Founded and architected VidSentry, a high-performance AI video moderation platform that\'s shaping the future of trust & safety at scale. Built with Sightengine + custom ML orchestration, FFmpeg processing workers, and Supabase storage for real-time compliance enforcement.',
     technologies: ['Python', 'TensorFlow', 'FFmpeg', 'Supabase', 'Sightengine API', 'React', 'Node.js', 'Docker'],
-    image: 'https://github.com/VidSentry/assets/blob/main/vs-chat-main.png?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://raw.githubusercontent.com/VidSentry/assets/refs/heads/main/vs-chat-main.png?auto=compress&cs=tinysrgb&w=800',
     demoUrl: 'https://vidsentry.com',
     category: 'AI/ML',
     impact: '90% reduction in manual moderation time',
