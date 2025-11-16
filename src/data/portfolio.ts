@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description: 'The world\'s next-generation AI moderation platform detecting hate speech, violence, and nudity in real-time',
     longDescription: 'Founded and architected VidSentry, a high-performance AI video moderation platform that\'s shaping the future of trust & safety at scale. Built with Sightengine + custom ML orchestration, FFmpeg processing workers, and Supabase storage for real-time compliance enforcement.',
     technologies: ['Python', 'TensorFlow', 'FFmpeg', 'Supabase', 'Sightengine API', 'React', 'Node.js', 'Docker'],
-    image: 'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://github.com/VidSentry/assets/blob/main/vs-chat-main.png?auto=compress&cs=tinysrgb&w=800',
     demoUrl: 'https://vidsentry.com',
     category: 'AI/ML',
     impact: '90% reduction in manual moderation time',
@@ -32,13 +32,14 @@ export const projects: Project[] = [
     longDescription: 'Architected an AI-powered medical triage assistant to empower healthcare workers in low-resource settings. TriageBot Pro provides instant clinical decision support for emergency medicine via WhatsApp, works offline, and supports multiple languages to ensure rapid and accurate patient assessment.',
     technologies: ['TensorFlow.js', 'React Native', 'Python', 'Twilio API', 'PWA', 'SQLite', 'Docker'],
     image: 'https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=800',
+    demoUrl: 'https://triagebotpro.netlify.app',
     category: 'AI/ML',
     impact: 'Reduces triage time by 50%',
     year: 2023
   },
   {
     id: '4',
-    title: 'Clinical Data Intelligence — UCT Paediatrics',
+    title: 'Clinical Data Intelligence - UCT Paediatrics',
     description: 'Advanced ML research on 100M+ medical records supporting lifesaving paediatric health outcomes',
     longDescription: 'Led data analysis and ML research at UCT Department of Paediatrics, cleaning and analyzing over 100 million medical records. Built reproducible pipelines and dashboards supporting critical research on paediatric health outcomes and future medical AI diagnostics.',
     technologies: ['Python', 'SQL', 'BigQuery', 'Power BI', 'PyTorch', 'Pandas', 'Scikit-learn'],
@@ -53,7 +54,7 @@ export const projects: Project[] = [
     description: 'An interpretable ML model for automated pneumonia diagnosis using chest X-rays and clinical data.',
     longDescription: 'Developed an interpretable machine learning system for automated pneumonia diagnosis by fusing chest X-ray images with clinical data. The model prioritized accuracy, fairness, and clinical explainability (via Grad-CAM) for deployment in resource-constrained hospitals.',
     technologies: ['PyTorch', 'OpenCV', 'Grad-CAM', 'DICOM', 'Python', 'Jupyter', 'scikit-learn'],
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.unsplash.com/photo-1616012480717-fd9867059ca0?auto=compress&cs=tinysrgb&w=800',
     category: 'Research',
     impact: 'Zero-delay diagnosis potential',
     year: 2024
