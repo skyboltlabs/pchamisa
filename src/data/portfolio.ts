@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description: 'The world\'s next-generation AI moderation platform detecting hate speech, violence, and nudity in real-time',
     longDescription: 'Founded and architected VidSentry, a high-performance AI video moderation platform that\'s shaping the future of trust & safety at scale. Built with Sightengine + custom ML orchestration, FFmpeg processing workers, and Supabase storage for real-time compliance enforcement.',
     technologies: ['Python', 'TensorFlow', 'FFmpeg', 'Supabase', 'Sightengine API', 'React', 'Node.js', 'Docker'],
-    image: 'https://raw.githubusercontent.com/VidSentry/assets/refs/heads/main/vs-chat-main.png?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800',
     demoUrl: 'https://vidsentry.com',
     category: 'AI/ML',
     impact: '90% reduction in manual moderation time',
@@ -49,9 +49,9 @@ export const projects: Project[] = [
   },
   {
     id: '5',
-    title: 'Honours Thesis — AI Disease Detection',
-    description: 'ML system for radiology + clinical data fusion targeting life-threatening disease diagnosis',
-    longDescription: 'Developed an advanced machine learning system combining radiology imaging with clinical data for early detection of life-threatening diseases. Focused on accuracy, explainability using Grad-CAM, and fairness across demographics for deployment in resource-constrained hospitals.',
+    title: 'Honours Thesis: Interpretable AI for Pneumonia Diagnosis',
+    description: 'An interpretable ML model for automated pneumonia diagnosis using chest X-rays and clinical data.',
+    longDescription: 'Developed an interpretable machine learning system for automated pneumonia diagnosis by fusing chest X-ray images with clinical data. The model prioritized accuracy, fairness, and clinical explainability (via Grad-CAM) for deployment in resource-constrained hospitals.',
     technologies: ['PyTorch', 'OpenCV', 'Grad-CAM', 'DICOM', 'Python', 'Jupyter', 'scikit-learn'],
     image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800',
     category: 'Research',
@@ -153,11 +153,11 @@ export const publications: Publication[] = [
   },
   {
     id: '4',
-    title: 'Explainable AI in Medical Diagnosis: Grad-CAM Applications in Radiology',
+    title: 'Application of an Interpretable Machine Learning Model for Automated Diagnosis of Life-Threatening Diseases: A Case Study of Pneumonia Detection in Chest X-Rays and Clinical Data',
     authors: ['Pride Chamisa'],
     venue: 'Honours Thesis - University of South Africa',
-    year: 2025,
-    abstract: 'Development of interpretable machine learning systems for medical diagnosis, combining radiology imaging with clinical data while ensuring fairness across demographic groups and explainability for clinical practitioners.',
+    year: 2024,
+    abstract: 'This thesis presents an interpretable machine learning model for the automated diagnosis of pneumonia by fusing chest X-ray images with clinical data. The study focuses on achieving high diagnostic accuracy while ensuring model explainability for clinicians using techniques like Grad-CAM, and evaluating fairness across different demographic groups.',
     citations: 0
   }
 ];
