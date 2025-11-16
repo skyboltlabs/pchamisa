@@ -157,7 +157,7 @@ export const publications: Publication[] = [
     title: 'Application of an Interpretable Machine Learning Model for Automated Diagnosis of Life-Threatening Diseases: A Case Study of Pneumonia Detection in Chest X-Rays and Clinical Data',
     authors: ['Pride Chamisa'],
     venue: 'Honours Thesis - University of South Africa',
-    year: 2024,
+    year: 2025,
     abstract: 'This thesis presents an interpretable machine learning model for the automated diagnosis of pneumonia by fusing chest X-ray images with clinical data. The study focuses on achieving high diagnostic accuracy while ensuring model explainability for clinicians using techniques like Grad-CAM, and evaluating fairness across different demographic groups.',
     citations: 0
   }
