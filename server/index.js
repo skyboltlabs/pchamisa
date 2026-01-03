@@ -58,7 +58,7 @@ app.post('/api/contact', async (req, res) => {
     // Prepare email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'pride@chamisa.com',
+      to: 'pride.chamisa@vidsentry.com',
       subject: `New Collaboration Inquiry from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
