@@ -12,6 +12,7 @@ const About = React.lazy(() => import('./pages/About'));
 const Projects = React.lazy(() => import('./pages/Projects'));
 const Research = React.lazy(() => import('./pages/Research'));
 const Contact = React.lazy(() => import('./pages/Contact'));
+const VidSentry = React.lazy(() => import('./pages/VidSentry'));
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <div className="min-h-screen relative">
           <AnimatedBackground />
           <Header />
-          
+
           <main>
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>
@@ -29,10 +30,11 @@ function App() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/research" element={<Research />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/vidsentry" element={<VidSentry />} />
               </Routes>
             </Suspense>
           </main>
-          
+
           <Footer />
         </div>
       </Router>
