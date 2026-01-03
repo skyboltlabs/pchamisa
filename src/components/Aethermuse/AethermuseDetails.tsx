@@ -246,12 +246,22 @@ const AethermuseDetails: React.FC = () => {
 
                 {/* Calls to Action */}
                 <section className="flex flex-col sm:flex-row gap-4 justify-center pt-8 border-t border-white/10">
-                    <button className="flex items-center justify-center gap-2 px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-purple-500/25">
+                    <a
+                        href="https://aethermuse.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-purple-500/25"
+                    >
                         Explore the Museum
-                    </button>
-                    <button className="flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-full font-semibold transition-all backdrop-blur-sm">
+                    </a>
+                    <a
+                        href="https://aethermuse.netlify.app/galleries"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-full font-semibold transition-all backdrop-blur-sm"
+                    >
                         View Current Exhibitions
-                    </button>
+                    </a>
                 </section>
 
                 <div className="text-center text-white/40 text-sm pt-8">
