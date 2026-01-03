@@ -14,6 +14,7 @@ const Research = React.lazy(() => import('./pages/Research'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const VidSentry = React.lazy(() => import('./pages/VidSentry'));
 const Aethermuse = React.lazy(() => import('./pages/Aethermuse'));
+const TriageBotPro = React.lazy(() => import('./pages/TriageBotPro'));
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/vidsentry" element={<VidSentry />} />
                 <Route path="/aethermuse" element={<Aethermuse />} />
+                <Route path="/triagebotpro" element={<TriageBotPro />} />
               </Routes>
             </Suspense>
           </main>
