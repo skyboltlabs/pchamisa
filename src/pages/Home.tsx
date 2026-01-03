@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, TrendingUp, Users, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import GlassCard from '../components/UI/GlassCard';
-import Modal from '../components/UI/Modal';
-import VidSentryDetails from '../components/VidSentry/VidSentryDetails';
 import { projects } from '../data/portfolio';
 
 const Home: React.FC = () => {
-  const [showVidSentryModal, setShowVidSentryModal] = useState(false);
-
   const stats = [
     { icon: TrendingUp, label: 'Medical Records Analyzed', value: '100M+' },
     { icon: Users, label: 'Viewers Protected', value: '2B+' },
@@ -149,8 +145,7 @@ const Home: React.FC = () => {
                 viewport={{ once: true }}
               >
                 {project.id === '1' ? (
-                  // Special handling for VidSentry card
-                  <div onClick={() => setShowVidSentryModal(true)} className="cursor-pointer">
+                  <Link to="/vidsentry">
                     <GlassCard className="overflow-hidden h-full">
                       <div className="aspect-video overflow-hidden">
                         <img
@@ -185,7 +180,7 @@ const Home: React.FC = () => {
                         </div>
                       </div>
                     </GlassCard>
-                  </div>
+                  </Link>
                 ) : (
                   <Link to={`/projects/${project.id}`}>
                     <GlassCard className="overflow-hidden h-full">
@@ -248,10 +243,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* VidSentry User Modal */}
-      <Modal isOpen={showVidSentryModal} onClose={() => setShowVidSentryModal(false)}>
-        <VidSentryDetails />
-      </Modal>
+
     </div>
   );
 };
