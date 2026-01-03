@@ -185,7 +185,8 @@ const Home: React.FC = () => {
                   <Link to={
                     project.id === '2' ? '/aethermuse' :
                       project.id === '3' ? '/triagebotpro' :
-                        `/projects/${project.id}`
+                        project.id === '4' ? '/clinical-data' :
+                          `/projects/${project.id}`
                   }>
                     <GlassCard className="overflow-hidden h-full">
                       <div className="aspect-video overflow-hidden">
