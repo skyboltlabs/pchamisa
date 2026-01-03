@@ -182,7 +182,11 @@ const Home: React.FC = () => {
                     </GlassCard>
                   </Link>
                 ) : (
-                  <Link to={project.id === '2' ? '/aethermuse' : `/projects/${project.id}`}>
+                  <Link to={
+                    project.id === '2' ? '/aethermuse' :
+                      project.id === '3' ? '/triagebotpro' :
+                        `/projects/${project.id}`
+                  }>
                     <GlassCard className="overflow-hidden h-full">
                       <div className="aspect-video overflow-hidden">
                         <img
