@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, TrendingUp, Users, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import GlassCard from '../components/UI/GlassCard';
+import Modal from '../components/UI/Modal';
+import VidSentryDetails from '../components/VidSentry/VidSentryDetails';
 import { projects } from '../data/portfolio';
 
 const Home: React.FC = () => {
+  const [showVidSentryModal, setShowVidSentryModal] = useState(false);
+
   const stats = [
     { icon: TrendingUp, label: 'Medical Records Analyzed', value: '100M+' },
     { icon: Users, label: 'Viewers Protected', value: '2B+' },
@@ -23,7 +27,7 @@ const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.h1 
+            <motion.h1
               className="text-6xl md:text-8xl font-bold text-white mb-6"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -31,7 +35,7 @@ const Home: React.FC = () => {
             >
               Pride Chamisa
             </motion.h1>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -40,7 +44,7 @@ const Home: React.FC = () => {
             >
               Founder · Data Scientist · Machine Learning Engineer · Product Architect
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -69,7 +73,7 @@ const Home: React.FC = () => {
                   <ArrowRight size={20} />
                 </motion.button>
               </Link>
-              
+
               <Link to="/contact">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -144,41 +148,82 @@ const Home: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <GlassCard className="overflow-hidden">
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                    />
+                {project.id === '1' ? (
+                  // Special handling for VidSentry card
+                  <div onClick={() => setShowVidSentryModal(true)} className="cursor-pointer">
+                    <GlassCard className="overflow-hidden h-full">
+                      <div className="aspect-video overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <div className="flex items-center justify-between mb-4">
+                          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-semibold">
+                            {project.category}
+                          </span>
+                          <span className="text-white/60 text-sm">{project.year}</span>
+                        </div>
+                        <h3 className="text-xl font-bold text-white mb-3">
+                          {project.title}
+                        </h3>
+                        <p className="text-white/70 mb-4">
+                          {project.description}
+                        </p>
+                        <div className="flex items-center justify-between">
+                          <span className="text-green-400 font-semibold">
+                            {project.impact}
+                          </span>
+                          <button
+                            className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                          >
+                            Learn More
+                            <ArrowRight size={16} />
+                          </button>
+                        </div>
+                      </div>
+                    </GlassCard>
                   </div>
-                  <div className="p-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-semibold">
-                        {project.category}
-                      </span>
-                      <span className="text-white/60 text-sm">{project.year}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      {project.title}
-                    </h3>
-                    <p className="text-white/70 mb-4">
-                      {project.description}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-green-400 font-semibold">
-                        {project.impact}
-                      </span>
-                      <Link
-                        to={`/projects/${project.id}`}
-                        className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                      >
-                        Learn More
-                        <ArrowRight size={16} />
-                      </Link>
-                    </div>
-                  </div>
-                </GlassCard>
+                ) : (
+                  <Link to={`/projects/${project.id}`}>
+                    <GlassCard className="overflow-hidden h-full">
+                      <div className="aspect-video overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <div className="flex items-center justify-between mb-4">
+                          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-semibold">
+                            {project.category}
+                          </span>
+                          <span className="text-white/60 text-sm">{project.year}</span>
+                        </div>
+                        <h3 className="text-xl font-bold text-white mb-3">
+                          {project.title}
+                        </h3>
+                        <p className="text-white/70 mb-4">
+                          {project.description}
+                        </p>
+                        <div className="flex items-center justify-between">
+                          <span className="text-green-400 font-semibold">
+                            {project.impact}
+                          </span>
+                          <span
+                            className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                          >
+                            Learn More
+                            <ArrowRight size={16} />
+                          </span>
+                        </div>
+                      </div>
+                    </GlassCard>
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>
@@ -202,6 +247,11 @@ const Home: React.FC = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* VidSentry User Modal */}
+      <Modal isOpen={showVidSentryModal} onClose={() => setShowVidSentryModal(false)}>
+        <VidSentryDetails />
+      </Modal>
     </div>
   );
 };
