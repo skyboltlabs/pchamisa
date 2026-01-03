@@ -1,5 +1,5 @@
 import React from 'react';
-import TriageBotProDetails from '../components/TriageBotPro/TriageBotProDetails';
+import TriageBotProDetails from '../components/TriageBotPro/TriageBotProDetails.tsx';
 import { Helmet } from 'react-helmet-async';
 
 const TriageBotPro: React.FC = () => {
