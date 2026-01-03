@@ -42,8 +42,8 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'pride@chamisa.com',
-      href: 'mailto:pride@chamisa.com'
+      value: 'pride.chamisa@vidsentry.com',
+      href: 'mailto:pride.chamisa@vidsentry.com'
     },
     {
       icon: Phone,
