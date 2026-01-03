@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://github.com"
+                href="https://github.com/VidSentry"
                 className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors"
               >
                 <Github size={20} />
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/chamisapride"
                 className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors"
               >
                 <Linkedin size={20} />
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://twitter.com"
+                href="https://twitter.com/VidSentry"
                 className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors"
               >
                 <Twitter size={20} />
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
             Made with <Heart className="mx-2 text-red-400" size={16} /> by Pride Chamisa
           </p>
           <p className="text-gray-400 text-sm mt-2">
-            © 2024 Pride Chamisa. All rights reserved.
+            © 2026 Pride Chamisa. All rights reserved.
           </p>
         </div>
       </div>
